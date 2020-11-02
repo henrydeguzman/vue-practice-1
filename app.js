@@ -4,17 +4,23 @@ const app = Vue.createApp({
 			counter: 10,
 			addNum: 5,
 			name: "",
-			confirmedName: "",
+               confirmedName: "",
+               fullname: ''
 		};
-	},
+     },
+     watch: {
+          name(value, oldval) {
+               this.fullname = value + ' De Guzman';
+          }
+     },
 	computed: {
-		fullname() {
-			console.log("Running again...");
-			if (this.name === "") {
-				return "";
-               }
-               return this.name + ' ' + 'De Guzman'
-		},
+		// fullname() {
+		// 	console.log("Running again...");
+		// 	if (this.name === "") {
+		// 		return "";
+          //      }
+          //      return this.name + ' ' + 'De Guzman'
+		// },
 	},
 	methods: {
 		outputFullName() {
