@@ -21,6 +21,8 @@
       <button v-on:click="add(true)">Add + {{ addNum }}</button>
       <button @click="add(false)">Remove - {{ addNum }}</button>
       <p>Result: {{ counter }}</p>
+      <input type="text" v-model="textVal">
+      <p>Your Name: {{ textVal }}</p>
     </section>
   </body>
 </html>

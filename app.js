@@ -1,8 +1,9 @@
 const app = Vue.createApp({
   data() {
     return {
-      counter: 0,
-      addNum: 5
+         counter: 0,
+         addNum: 5,
+         textVal: ''
     };
   },
   methods: {
